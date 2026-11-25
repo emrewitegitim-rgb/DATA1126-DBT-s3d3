@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: agg_sales
+    description: summary of order including total_revenue, totel_quantity
+    columns:
+      - name: order_id
+        description: primary key of agg_sales table
+        tests:
+          - unique
+          - not_null
+          
